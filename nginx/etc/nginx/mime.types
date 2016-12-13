@@ -1,0 +1,27 @@
+types {
+    text/html                             html htm shtml;
+    text/css                              css;
+    text/xml                              xml;
+    image/gif                             gif;
+    image/jpeg                            jpeg jpg;
+
+    text/mathml                           mml;
+    text/plain                            txt;
+    text/vnd.wap.wml                      wml;
+
+    image/png                             png;
+    image/tiff                            tif tiff;
+    image/vnd.wap.wbmp                    wbmp;
+    image/x-icon                          ico;
+    image/x-jng                           jng;
+    image/x-ms-bmp                        bmp;
+    image/svg+xml                         svg svgz;
+
+    application/json                      json;
+    application/pdf                       pdf;
+    application/x-x509-ca-cert            der pem crt;
+    application/xhtml+xml                 xhtml;
+    application/zip                       zip;
+
+    application/octet-stream              iso img;
+}

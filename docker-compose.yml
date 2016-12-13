@@ -1,0 +1,25 @@
+version: '2'
+services:
+  cm-5:
+    build:
+      context: cm-5/.
+      args:
+        - http_proxy
+        - https_proxy
+        - no_proxy
+    entrypoint: /bin/bash
+    volumes:
+      - cm5_repo:/repo
+  nginx:
+    build:
+      context: nginx/.
+      args:
+        - http_proxy
+        - https_proxy
+        - no_proxy
+    volumes_from:
+      - cm-5:ro
+    ports:
+      - "80:80"
+volumes:
+  cm5_repo:
